@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cores Personalizadas (Neon Tech) */
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  
+  /* Verde para referências ao Agro/Spring */
+  --color-accent-500: #10b981; 
+  --color-accent-400: #34d399;
+  --color-accent-300: #6ee7b7;
+
+  /* Paleta Slate (Escura) - Garantindo que exista caso o padrão mude */
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
+  /* Fonte Padrão */
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Estilos Globais */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-900 text-slate-100 font-sans antialiased;
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-slate-800);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-700);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-600);
+}
