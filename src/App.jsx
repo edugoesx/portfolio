@@ -12,7 +12,8 @@ import {
   Terminal,
   ShieldCheck,
   Layout,
-  Search
+  Search,
+  FileText
 } from 'lucide-react';
 
 function App() {
@@ -181,7 +182,9 @@ function App() {
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-accent-500 rounded-full"></div>Node.JS (Express)</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-accent-500 rounded-full"></div>Spring Security / JWT</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-accent-500 rounded-full"></div>SQL (Postgres) & NoSQL (MongoDB)</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-accent-500 rounded-full"></div>Git & GitHub</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-accent-500 rounded-full"></div>Docker & DevOps</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-accent-500 rounded-full"></div>Python</li>
             </ul>
           </div>
 
@@ -197,6 +200,7 @@ function App() {
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary-500 rounded-full"></div>Angular</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary-500 rounded-full"></div>Tailwind CSS</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary-500 rounded-full"></div>Figma</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary-500 rounded-full"></div>Bootstrap</li>
             </ul>
           </div>
 
@@ -246,6 +250,32 @@ function App() {
                   <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">n8n</span>
                   <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">Supabase</span>
                 </div>
+              </div>
+            </div>
+
+            {/* Novo Projeto*/}
+
+            <div className="group bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 flex flex-col">
+              <div className="h-48 bg-gradient-to-br from-amber-900/40 to-slate-800 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+                <FileText size={48} className="text-amber-400" />
+              </div>
+              <div className="p-6 flex-1 flex flex-col">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Node.js Blog System</h3>
+                  <span className="bg-amber-900/30 text-amber-400 text-xs px-2 py-1 rounded">Full Stack</span>
+                </div>
+                <p className="text-slate-400 text-sm mb-4 flex-1">
+                  Plataforma completa node.js (express) de blog com painel administrativo e autenticação JWT via cookies. Renderização Server-Side (SSR) com EJS e persistência no MongoDB.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">Node.js</span>
+                  <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">Express</span>
+                  <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">MongoDB</span>
+                  <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">EJS</span>
+                </div>
+                <a href="https://github.com/edugoesx/nodejsblog" target="_blank" className="flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 mt-auto">
+                  Ver Código <ExternalLink size={14} />
+                </a>
               </div>
             </div>
 
