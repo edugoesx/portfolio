@@ -13,7 +13,8 @@ import {
   ShieldCheck,
   Layout,
   Search,
-  FileText
+  FileText,
+  Smartphone
 } from 'lucide-react';
 
 function App() {
@@ -394,6 +395,31 @@ function App() {
                   <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">CSS3</span>
                 </div>
                 <a href="https://github.com/edugoesx/fetch-github-api" target="_blank" className="flex items-center gap-2 text-sm text-purple-400 hover:text-purple-300 mt-auto">
+                  Ver Código <ExternalLink size={14} />
+                </a>
+              </div>
+            </div>
+
+            { /* Projeto 7*/}
+
+            <div className="group bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col">
+              <div className="h-48 bg-gradient-to-br from-blue-900/40 to-slate-800 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+                <Smartphone size={48} className="text-blue-400" />
+              </div>
+              <div className="p-6 flex-1 flex flex-col">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">iPhone 17 Clone</h3>
+                  <span className="bg-blue-900/30 text-blue-400 text-xs px-2 py-1 rounded">Frontend</span>
+                </div>
+                <p className="text-slate-400 text-sm mb-4 flex-1">
+                  Réplica fiel da experiência de usuário (UX) da Apple Store. Foco em design system minimalista, animações fluidas e estruturação avançada de componentes.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">React</span>
+                  <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">Tailwind CSS</span>
+                  <span className="text-xs text-slate-300 bg-slate-700 px-2 py-1 rounded">Vite</span>
+                </div>
+                <a href="https://github.com/edugoesx/iphone17" target="_blank" className="flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 mt-auto">
                   Ver Código <ExternalLink size={14} />
                 </a>
               </div>
